@@ -18,24 +18,24 @@
         <article class="pratoPrincipal">
             <h2>Primeiro, seu prato</h2>
             <div class="opcoes">
-                <div id="frango">
+                <div id="frango" onclick="escolhePrato(this)">
                     <img src="./images/frango.jpg" alt="Yaksoba de frango">
-                    <p class="nomePrato">Frango Yin Yang</p>
-                    <p class="descricaoPrato">Um pouco de batata, um pouco de salada</p>
+                    <p class="nomePrato">Yakisoba de Frango</p>
+                    <p class="descricaoPrato">Frango, molho, legumes.</p>
                     <p class="preco">R$ 14.99</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div id="carne">
+                <div id="carne" onclick="escolhePrato(this)">
                     <img src="./images/carne.jpg" alt="Yakisoba de carne">
-                    <p class="nomePrato">Frango Yin Yang</p>
-                    <p class="descricaoPrato">Um pouco de batata, um pouco de salada</p>
+                    <p class="nomePrato">Yakisoba de Carne</p>
+                    <p class="descricaoPrato">Carne, molho, legumes.</p>
                     <p class="preco">R$ 16.99</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div id="misto">
+                <div id="misto" onclick="escolhePrato(this)">
                     <img src="./images/misto.jpg" alt="Yakisoba misto">
-                    <p class="nomePrato">Frango Yin Yang</p>
-                    <p class="descricaoPrato">Um pouco de batata, um pouco de salada</p>
+                    <p class="nomePrato">Yakisoba Misto</p>
+                    <p class="descricaoPrato">Frango, carne, molho, legumes.</p>
                     <p class="preco">R$ 16.99</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
@@ -44,24 +44,24 @@
         <article class="bebida">
             <h2>Agora, sua bebida</h2>
             <div class="opcoes">
-                <div id="agua">
+                <div id="agua" onclick="escolheBebida(this)">
                     <img src="./images/agua.jpg" alt="Agua">
-                    <p class="nomePrato">Frango Yin Yang</p>
-                    <p class="descricaoPrato">Um pouco de batata, um pouco de salada</p>
+                    <p class="nomePrato">Água mineral</p>
+                    <p class="descricaoPrato">Água mineral gelada, sem gás.</p>
                     <p class="preco">R$ 2.99</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div id="refrigerante">
+                <div id="refrigerante" onclick="escolheBebida(this)">
                     <img src="./images/refrigerante.jpg" alt="Refrigerantes">
-                    <p class="nomePrato">Frango Yin Yang</p>
-                    <p class="descricaoPrato">Um pouco de batata, um pouco de salada</p>
+                    <p class="nomePrato">Refrigerante lata</p>
+                    <p class="descricaoPrato">Refrigerante gelado sortido.</p>
                     <p class="preco">R$ 5.99</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div id="cha-gelado">
+                <div id="cha-gelado" onclick="escolheBebida(this)">
                     <img src="./images/cha-gelado.jpg" alt="Chá gelado">
-                    <p class="nomePrato">Frango Yin Yang</p>
-                    <p class="descricaoPrato">Um pouco de batata, um pouco de salada</p>
+                    <p class="nomePrato">Chá gelado</p>
+                    <p class="descricaoPrato">Ice tea sabor limão.</p>
                     <p class="preco">R$ 6.99</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
@@ -70,31 +70,31 @@
         <article class="sobremesa">
             <h2>Por fim, sua sobremesa</h2>
             <div class="opcoes">
-                <div id="brownie">
+                <div id="brownie" onclick="escolheSobremesa(this)">
                     <img src="./images/brownie-sorvete.jpg" alt="Brownie com sorvete">
-                    <p class="nomePrato">Frango Yin Yang</p>
-                    <p class="descricaoPrato">Um pouco de batata, um pouco de salada</p>
+                    <p class="nomePrato">Brownie com sorvete</p>
+                    <p class="descricaoPrato">Brownie de chocolate com sorvete de creme.</p>
                     <p class="preco">R$ 15.99</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div id="rolinho-ninho">
+                <div id="rolinho-ninho" onclick="escolheSobremesa(this)">
                     <img src="./images/rolinho-ninho-trufado.jpg" alt="Rolinho Primavera de ninho trufado">
-                    <p class="nomePrato">Frango Yin Yang</p>
-                    <p class="descricaoPrato">Um pouco de batata, um pouco de salada</p>
+                    <p class="nomePrato">Rolinho de ninho</p>
+                    <p class="descricaoPrato">Rolinho primavera recheado com ninho trufado.</p>
                     <p class="preco">R$ 13.99</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
-                <div id="rolinho-nutella">
+                <div id="rolinho-nutella" onclick="escolheSobremesa(this)">
                     <img src="./images/rolinho-nutella.jpg" alt="Rolinho Primavera de Nutella">
-                    <p class="nomePrato">Frango Yin Yang</p>
-                    <p class="descricaoPrato">Um pouco de batata, um pouco de salada</p>
+                    <p class="nomePrato">Rolinho Nutella</p>
+                    <p class="descricaoPrato">Rolinho primavera recheado com Nutella original.</p>
                     <p class="preco">R$ 16.99</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </article>
     </main>
-    <footer><button>Selecione os 3 itens para fechar o pedido</button></footer>
+    <footer><button id="finaliza">Selecione os 3 itens para fechar o pedido</button></footer>
 
     <script type="text/javascript" src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
