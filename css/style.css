@@ -41,6 +41,7 @@ header p{
 }
 /* Main */
 main{
+    margin-right: 19px;
     margin-left: 19px;
     margin-top: 92px;
     margin-bottom: calc(92px + 17px);
@@ -141,4 +142,80 @@ footer button{
     text-align: center;
     letter-spacing: 0.018em;
     color: #FFFFFF;
+}
+.popup-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 20;
+}
+.popup{
+    padding: 0 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 377px;
+    height: 353px;
+    background: #50D074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+}
+.popupTitulo{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+}
+.popupPrato,.popupBebida,.popupSobremesa,.popupTotal{
+    width: 100%;
+    /* text-align: justify-all;
+    text-justify: inter-word; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 22px;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+}
+.popupTotal{
+    font-weight: bold;
+}
+.tudo-certo{
+    background: #FFFFFF;
+    border-radius: 100px;
+    border:none;
+    width: 329px;
+    height: 52px;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #50D074;
+}
+.cancelar{
+    background: #50D074;
+    border:none;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+}
+.escondido{
+    display: none;
 }

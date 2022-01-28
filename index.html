@@ -14,7 +14,18 @@
         <h1>DrivenEats</h1>
         <p>Sua comida em 6 minutos</p>
     </header>
-        <main>
+    <main>
+        <div class="popup-wrapper escondido">
+            <div class="popup">
+                <div class="popupTitulo">Confirme seu pedido</div>
+                <div class="popupPrato">blablabla <span>preco</span></div>
+                <div class="popupBebida">blablabla <span>preco</span></div>
+                <div class="popupSobremesa">blablabla <span>preco</span></div>
+                <div class="popupTotal"> TOTAL <span>R$ preco</span></div>
+                <button class="tudo-certo" onclick="tudoCerto()">Tudo certo, pode pedir!</button>
+                <button class="cancelar" onclick="cancelar()">Cancelar</button>
+            </div>
+        </div>
         <article class="pratoPrincipal">
             <h2>Primeiro, seu prato</h2>
             <div class="opcoes">
@@ -22,21 +33,21 @@
                     <img src="./images/frango.jpg" alt="Yaksoba de frango">
                     <p class="nomePrato">Yakisoba de Frango</p>
                     <p class="descricaoPrato">Frango, molho, legumes.</p>
-                    <p class="preco">R$ 14.99</p>
+                    <p class="preco">R$ 14,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div id="carne" onclick="escolhePrato(this)">
                     <img src="./images/carne.jpg" alt="Yakisoba de carne">
                     <p class="nomePrato">Yakisoba de Carne</p>
                     <p class="descricaoPrato">Carne, molho, legumes.</p>
-                    <p class="preco">R$ 16.99</p>
+                    <p class="preco">R$ 16,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div id="misto" onclick="escolhePrato(this)">
                     <img src="./images/misto.jpg" alt="Yakisoba misto">
                     <p class="nomePrato">Yakisoba Misto</p>
                     <p class="descricaoPrato">Frango, carne, molho, legumes.</p>
-                    <p class="preco">R$ 16.99</p>
+                    <p class="preco">R$ 16,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
@@ -48,21 +59,21 @@
                     <img src="./images/agua.jpg" alt="Agua">
                     <p class="nomePrato">Água mineral</p>
                     <p class="descricaoPrato">Água mineral gelada, sem gás.</p>
-                    <p class="preco">R$ 2.99</p>
+                    <p class="preco">R$ 2,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div id="refrigerante" onclick="escolheBebida(this)">
                     <img src="./images/refrigerante.jpg" alt="Refrigerantes">
                     <p class="nomePrato">Refrigerante lata</p>
                     <p class="descricaoPrato">Refrigerante gelado sortido.</p>
-                    <p class="preco">R$ 5.99</p>
+                    <p class="preco">R$ 5,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div id="cha-gelado" onclick="escolheBebida(this)">
                     <img src="./images/cha-gelado.jpg" alt="Chá gelado">
                     <p class="nomePrato">Chá gelado</p>
                     <p class="descricaoPrato">Ice tea sabor limão.</p>
-                    <p class="preco">R$ 6.99</p>
+                    <p class="preco">R$ 6,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
@@ -72,29 +83,29 @@
             <div class="opcoes">
                 <div id="brownie" onclick="escolheSobremesa(this)">
                     <img src="./images/brownie-sorvete.jpg" alt="Brownie com sorvete">
-                    <p class="nomePrato">Brownie com sorvete</p>
+                    <p class="nomePrato">Brownie e sorvete</p>
                     <p class="descricaoPrato">Brownie de chocolate com sorvete de creme.</p>
-                    <p class="preco">R$ 15.99</p>
+                    <p class="preco">R$ 15,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div id="rolinho-ninho" onclick="escolheSobremesa(this)">
                     <img src="./images/rolinho-ninho-trufado.jpg" alt="Rolinho Primavera de ninho trufado">
                     <p class="nomePrato">Rolinho de ninho</p>
                     <p class="descricaoPrato">Rolinho primavera recheado com ninho trufado.</p>
-                    <p class="preco">R$ 13.99</p>
+                    <p class="preco">R$ 13,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
                 <div id="rolinho-nutella" onclick="escolheSobremesa(this)">
                     <img src="./images/rolinho-nutella.jpg" alt="Rolinho Primavera de Nutella">
                     <p class="nomePrato">Rolinho Nutella</p>
                     <p class="descricaoPrato">Rolinho primavera recheado com Nutella original.</p>
-                    <p class="preco">R$ 16.99</p>
+                    <p class="preco">R$ 16,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </article>
     </main>
-    <footer><button id="finaliza">Selecione os 3 itens para fechar o pedido</button></footer>
+    <footer><button id="finaliza" onclick="finaliza()">Selecione os 3 itens para fechar o pedido</button></footer>
 
     <script type="text/javascript" src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
