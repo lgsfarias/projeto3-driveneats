@@ -90,5 +90,5 @@ Total: R$ ${total}\n
 Nome: ${nome}\n
 Endereço: ${endereco}`
     console.log(mensagem);
-    window.open("https://wa.me/+5521979429298?text="+encodeURIComponent(mensagem));
+    window.open("https://wa.me/+5521980399582?text="+encodeURIComponent(mensagem));
 }
