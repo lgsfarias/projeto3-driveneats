@@ -142,7 +142,9 @@ footer button{
     text-align: center;
     letter-spacing: 0.018em;
     color: #FFFFFF;
+    cursor: pointer;
 }
+/* popUp */
 .popup-wrapper{
     display: flex;
     justify-content: center;
@@ -176,8 +178,6 @@ footer button{
 }
 .popupPrato,.popupBebida,.popupSobremesa,.popupTotal{
     width: 100%;
-    /* text-align: justify-all;
-    text-justify: inter-word; */
     display: flex;
     justify-content: space-between;
     font-size: 22px;
@@ -203,6 +203,7 @@ footer button{
     text-align: center;
     letter-spacing: 0.018em;
     color: #50D074;
+    cursor: pointer;
 }
 .cancelar{
     background: #50D074;
@@ -215,7 +216,9 @@ footer button{
     text-align: center;
     letter-spacing: 0.018em;
     color: #FFFFFF;
+    cursor: pointer;
 }
+/* escondido */
 .escondido{
     display: none;
 }
