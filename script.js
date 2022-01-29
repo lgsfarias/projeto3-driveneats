@@ -1,15 +1,15 @@
 // declaração das variáveis
-let prato
-let bebida
-let sobremesa
+let prato;
+let bebida;
+let sobremesa;
 
-let precoPrato
-let precoBebida
-let precoSobremesa
-let total
+let precoPrato;
+let precoBebida;
+let precoSobremesa;
+let total;
 
-let nome
-let endereco
+let nome;
+let endereco;
 
 function escolhePrato (i) {
     // Esta função é invocada quando o usuário clica em uma opção de prato principal.
@@ -95,3 +95,5 @@ function tudoCerto () {
     console.log(mensagem);
     window.open("https://wa.me/+5521980399582?text="+encodeURIComponent(mensagem));
 }
+
+
